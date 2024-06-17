@@ -1,0 +1,72 @@
+{
+  "name": "simple-chatbot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A simple chatbot using Next.js and OpenAI API",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mono300genuine/bot-competition.git"
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "chatbot",
+    "openai"
+  ],
+  "overrides": {
+    "next-contentlayer": {
+      "next": "$next"
+    }
+  },
+  "author": "mono300genuine",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.12",
+    "@headlessui/react": "^1.7.17",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15.18",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@nextui-org/react": "^2.3.6",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^1.6.8",
+    "buffer-image": "^1.0.0",
+    "chart.js": "^4.4.2",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "contentlayer": "^0.3.2",
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.0.28",
+    "next": "^14.0.3",
+    "next-contentlayer": "^0.3.4",
+    "notistack": "^3.0.1",
+    "openai": "^4.51.0",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.1.0",
+    "recharts": "^2.12.7",
+    "replicate": "^0.30.0",
+    "styled-components": "^6.1.11",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/aos": "^3.0.7",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6"
+  }
+}
