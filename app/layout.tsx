@@ -1,25 +1,11 @@
 import './css/style.css'
 
-import { Inter, Architects_Daughter } from 'next/font/google'
 
-import { Providers } from "./providers";
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap'
-})
-
-const architects_daughter = Architects_Daughter({
-  subsets: ['latin'],
-  variable: '--font-architects-daughter',
-  weight: '400',
-  display: 'swap'
-})
+import { UIProvider } from "../components/utils/providers";
 
 export const metadata = {
-  title: 'homework',
-  description: 'chatbot homework',
+  title: 'simple-chatgpt',
+  description: 'simple-chatgpt',
 }
 
 export default function RootLayout({
@@ -29,11 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-white text-gray-200 tracking-tight`}>
+      <body className='font-inter antialiased bg-white text-gray-200 tracking-tight'>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          <Providers>
+          <UIProvider>
             {children}
-          </Providers>
+          </UIProvider>
         </div>
       </body>
     </html>
